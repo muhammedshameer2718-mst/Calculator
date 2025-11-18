@@ -14,6 +14,8 @@ function deleteLastChar() {
 function calculateResult() {
     let result = document.getElementById('result').value;
     try {
+        // Replace ^ with ** for exponentiation
+        result = result.replace(/\^/g, '**');
         document.getElementById('result').value = eval(result);
     } catch (error) {
         document.getElementById('result').value = 'Error';
