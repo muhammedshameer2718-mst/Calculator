@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Scientific Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Scientific Calculator</h1>
     <div class="calculator">
         <div class="display">
             <input type="text" id="result" disabled>
@@ -14,22 +15,30 @@
         <div class="keys">
             <button onclick="clearResult()">C</button>
             <button onclick="deleteLastChar()"><<</button>
-            <button onclick="appendChar('/')">/</button>
-            <button onclick="appendChar('*')">*</button>
+            <button onclick="appendChar('(')">(</button>
+            <button onclick="appendChar(')')">)</button>
+            <button onclick="appendChar('Math.sin(')">sin</button>
+            <button onclick="appendChar('Math.cos(')">cos</button>
+            <button onclick="appendChar('Math.tan(')">tan</button>
+            <button onclick="appendChar('Math.log(')">log</button>
             <button onclick="appendChar('7')">7</button>
             <button onclick="appendChar('8')">8</button>
             <button onclick="appendChar('9')">9</button>
-            <button onclick="appendChar('-')">-</button>
+            <button onclick="appendChar('/')">/</button>
             <button onclick="appendChar('4')">4</button>
             <button onclick="appendChar('5')">5</button>
             <button onclick="appendChar('6')">6</button>
-            <button onclick="appendChar('+')">+</button>
+            <button onclick="appendChar('*')">*</button>
             <button onclick="appendChar('1')">1</button>
             <button onclick="appendChar('2')">2</button>
             <button onclick="appendChar('3')">3</button>
-            <button onclick="calculateResult()">=</button>
+            <button onclick="appendChar('-')">-</button>
             <button onclick="appendChar('0')">0</button>
             <button onclick="appendChar('.')">.</button>
+            <button onclick="calculateResult()">=</button>
+            <button onclick="appendChar('+')">+</button>
+            <button onclick="appendChar('Math.sqrt(')">sqrt</button>
+            <button onclick="appendChar('**')">^</button>
         </div>
     </div>
     <script src="script.js"></script>
